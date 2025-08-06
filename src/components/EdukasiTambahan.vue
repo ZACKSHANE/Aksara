@@ -218,28 +218,28 @@ const diacritics = ref([
     name: 'Panulus',
     function: 'Vokal /i/',
     position: 'di atas',
-    image: new URL('@/assets/images/panulus4.avif', import.meta.url).href
+    image: new URL('@/assets/images/panulus.webp', import.meta.url).href
   },
   {
     char: 'ᯮ',
     name: 'Panonggial',
     function: 'Vokal /u/',
     position: 'di bawah huruf',
-    image: new URL('@/assets/images/pa1.avif', import.meta.url).href
+    image: new URL('@/assets/images/panongila.webp', import.meta.url).href
   },
   {
     char: '᯲',
     name: 'Pangolat',
     function: 'Konsonan mati',
     position: 'di bawah',
-    image: new URL('@/assets/images/pe1.avif', import.meta.url).href
+    image: new URL('@/assets/images/pangolat.webp', import.meta.url).href
   },
   {
     char: 'ᯱ',
     name: 'Pangulut',
     function: 'Konsonan rangkap',
     position: 'setelah huruf',
-    image: new URL('@/assets/images/pu1.avif', import.meta.url).href
+    image: new URL('@/assets/images/pangulut.webp', import.meta.url).href
   }
 ])
 

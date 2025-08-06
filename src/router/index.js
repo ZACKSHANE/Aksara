@@ -1,5 +1,4 @@
-// router/index.js
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router' // ✅ ubah di sini
 const HomeView = () => import('../views/HomeView.vue')
 const AboutView = () => import('../views/AboutView.vue')
 const AksaraOverview = () => import('../views/AksaraOverview.vue')
@@ -29,7 +28,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // ✅ ganti dari createWebHistory()
   routes
 })
 

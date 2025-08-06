@@ -542,7 +542,7 @@ const categories = ref([
       { text: "sihtngn", font: "toba" },
       { text: "sihtangn", font: "toba" }
     ],
-    correct: "shtng"
+    correct: "sihtng"
   },
   ],
 }
@@ -616,18 +616,19 @@ const getOptionClass = (option, index) => {
   if (!answerSelected.value) return '';
 
   const correct = currentQuestion.value.correct;
-
   const isCorrect =
     option.text === correct ||
     option.font === correct ||
     option.label === correct;
 
   if (index === selectedAnswerIndex.value) {
-    return isCorrect ? 'bg-green-500 text-white' : 'bg-red-500 text-white';
+    return isCorrect
+      ? 'bg-green-500 text-white animate-pulse'
+      : 'bg-red-500 text-white shake';
   }
 
   if (isCorrect) {
-    return 'bg-green-500 text-white';
+    return 'bg-green-500 text-white animate-pulse';
   }
 
   return '';
@@ -660,3 +661,17 @@ const resetQuiz = () => {
   }
 };
 </script>
+
+
+<style scoped>
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
+</style>
+

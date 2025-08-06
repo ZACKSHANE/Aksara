@@ -1,7 +1,7 @@
 <template>
   <InfoSection
     mainTitle="Mengenal Jejak Aksara Batak"
-    imageSrc="/src/assets/images/peta.avif"
+    :imageSrc="peta"
     imageAlt="Peta Persebaran Aksara Batak"
     imageClasses="object-cover rounded-xl w-full max-w-md xl:max-w-none xl:scale-95"
     imageWidth="600"
@@ -15,7 +15,7 @@
   />
 
   <InfoSection
-    imageSrc="/src/assets/images/hero.avif"
+    :imageSrc="hero"
     imageAlt="SISINGAMANGARAJA XII"
     imageClasses="object-cover bg-red-900 rounded-xl w-full max-w-md md:h-[700px]"
     imageWidth="600"
@@ -57,6 +57,8 @@
 </template>
 
 <script setup>
+import hero from '@/assets/images/hero.avif'
+import peta from '@/assets/images/peta.avif'
 import InfoSection from '../components/organisms/InfoSection.vue';
 import BaseTitle from '../components/atoms/BaseTitle.vue';
 import BaseText from '../components/atoms/BaseText.vue';
