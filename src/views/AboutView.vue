@@ -29,7 +29,7 @@
   />
 
   <InfoSection
-    imageSrc="/src/assets/images/write-aksara.avif"
+    :imageSrc="write"
     imageAlt="Orang menulis aksara Batak"
     imageClasses="object-cover rounded-xl w-full max-w-md md:h-[350px] xl:scale-120"
     imageWidth="600"
@@ -57,6 +57,7 @@
 </template>
 
 <script setup>
+import write from '@/assets/images/write-aksara.avif'
 import hero from '@/assets/images/hero.avif'
 import peta from '@/assets/images/peta.avif'
 import InfoSection from '../components/organisms/InfoSection.vue';
