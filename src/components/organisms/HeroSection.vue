@@ -68,3 +68,20 @@ import BaseButton from '../atoms/BaseButton.vue';
 import BaseText from '../atoms/BaseText.vue';
 import BaseTitle from '../atoms/BaseTitle.vue';
 </script>
+<style scoped>
+/* Add styles to ensure SVG visibility */
+.trapesium {
+  visibility: visible !important;
+  display: block !important;
+  opacity: 1 !important;
+}
+
+/* Ensure that the position of the SVG does not overlap */
+.absolute {
+  position: absolute;
+}
+
+.trapesium path {
+  transition: all 0.3s ease;
+}
+</style>
