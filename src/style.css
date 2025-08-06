@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@plugin "daisyui";
+/* RESET tambahan */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Pallet Warna */
+:root {
+  --primary-red: rgba(155, 55, 43, 1);
+  --primary-red-glass: rgba(155, 55, 43, 0.95);
+  --second-red: rgba(93, 33, 26, 1);
+  --third-red: rgba(54, 19, 15, 1);
+  --fourth-red: rgba(140, 50, 39, 1);
+  --primary-white: rgba(245, 235, 234, 1);
+  --second-white: rgba(224, 193, 189, 1);
+  --yellow:rgb(201, 165, 19);
+}
+
+html,
+body {
+  @apply min-h-screen;
+  color: var(--third-red);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-white);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* font */
+@font-face {
+  font-family:KARO;
+  src: url('./assets/fonts/KARO.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family:toba;
+  src: url('./assets/fonts/toba.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family:pakpak;
+  src: url('./assets/fonts/pakpak.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family:simalung;
+  src: url('./assets/fonts/simalung.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family:mandaili;
+  src: url('./assets/fonts/mandaili.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family:jainiPurva;
+  src: url('./assets/fonts/JainiPurva.woff');
+  font-display: swap;
+}
+
+
